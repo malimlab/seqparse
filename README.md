@@ -14,11 +14,13 @@ Place the MiSeq .fastq.gz files into a directory
 
 `./parse.sh <directory containing .fastq.gz files>`
 
+Place the .ebwt files into the 'indexes' directory in bowtie-1.1.2
+
 ## Output
 
 A directory named "parse_results" containing:
 
-`readCount.csv` - counts of RT product lengths in each sample <br />
+`readCount.csv` - absolute counts of RT product lengths in each sample <br />
 `readCount_normalised.csv` - RT product lengths normalised to total reads per sample <br />
 `readCount_length_adjusted.csv` - as above, but using oligo control sample to adjust for bias in read lengths <br />
 `baseVariation_<sample_name>.csv` - Per-base mutation summary
